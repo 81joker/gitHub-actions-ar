@@ -1,0 +1,22 @@
+name: Frist Workfolw
+
+on:
+  push:
+    branches: 
+      - main
+jobs:
+  example-job:
+   runs-on: ubuntu-latest
+
+   steps:
+    - name: Print a Welcome  message
+      run: echo "Welcone to our first Githup Actions Workflow!"
+
+    - name: Checkout Repository
+      uses: actions/checkout@v4.2.2
+
+    - name: List repoistory fiels
+      run: ls -la
+
+    
+     
