@@ -9,3 +9,8 @@ jobs:
       - name: Print message
         run: echo "This is a scheduled task running daily at midnight."
 
+# i can run this workflow manually or it will run automatically based on the schedule defined above.
+#  This workflow is set to run every day at midnight UTC.
+#  for example, if you want to run it every hour, you can change the cron expression to "0 * * * *".
+#  You can also change the time zone by adjusting the cron expression accordingly.
+#  To run this workflow manually, you can trigger it from the Actions tab in your Git
